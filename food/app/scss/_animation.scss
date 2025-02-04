@@ -1,0 +1,19 @@
+@keyframes animation-two-side {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes animation-one-side {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animation-multi-sids {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

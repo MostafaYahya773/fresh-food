@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Food Store</title>
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body id="main">
+    <div class="container-fluid position-relative" id="container">
+      <nav
+        id="nav"
+        class="nav my-2 px-2 p-0 py-1 mx-auto rounded-2 fixed-top flex-row justify-content-between"
+      >
+        <a class="d-flex align-items-center gap-3" href="#">
+          <p class="p-0 m-0 text-white fs-3">Fresh Food</p>
+        </a>
+        <div class="nav__humborger humborger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav__ul list-unstyled gap-3 align-items-center m-0">
+          <li>
+            <a class="text-decoration-none text-capitalize" href="#hero"
+              >main</a
+            >
+          </li>
+          <li>
+            <a class="text-decoration-none text-capitalize" href="#products"
+              >products</a
+            >
+          </li>
+          <li>
+            <a class="text-decoration-none text-capitalize" href="#services"
+              >services</a
+            >
+          </li>
+          <li>
+            <a class="text-decoration-none text-capitalize" href="#about"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a class="text-decoration-none text-capitalize" href="#pricing"
+              >pricing</a
+            >
+          </li>
+          <li>
+            <a class="text-decoration-none text-capitalize" href="#contact"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <section class="row hero bg-success fullWidth py-3" id="hero">
+        <div
+          class="col-md-12 col-sm-12 col-lg-12 col-xl-6 d-flex justify-content-center align-items-center"
+        >
+          <div class="item w-75 align-content-center">
+            <img
+              class="hero__img w-100 me-auto"
+              src="./imges/heroimg/hero.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="col-md-12 col-sm-12 col-lg-12 col-xl-6 d-flex justify-content-center flex-column gap-5 hero__text"
+        >
+          <h1 class="text-white text-capitalize hero__text__header">
+            <span class="text-warning">Discover</span> the most delicious
+            recipes and cooking secrets to prepare meals with love and ease!
+          </h1>
+          <a class="hero__text__btn text-center rounded-4 fs-5" href="#products"
+            >See More</a
+          >
+        </div>
+      </section>
+      <section
+        class="row mx-3 my-4 products text-center overflow-hidden"
+        id="products"
+      >
+        <h1 class="products__title my-2">
+          Top <span class="text-success">Catagories</span>
+        </h1>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 overflow-hidden d-flex align-items-center justify-content-center"
+        >
+          <div class="products__item rounded-4 w-100 position-relative">
+            <img
+              class="w-100 h-100 rounded-4"
+              src="./imges/products/pizza.jpeg"
+            />
+            <div
+              class="products__item__rate--name d-flex align-items-center justify-content-between px-2"
+            >
+              <a
+                class="products__item__rate--name--btn rounded-3 text-center position-absolute"
+                href="#products"
+                id="btn"
+                >pizza</a
+              >
+              <div
+                class="products__item__rate--name--rate position-absolute"
+                id="rate"
+              >
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 food-box overflow-hidden d-flex align-items-center justify-content-center"
+        >
+          <div class="products__item rounded-4 w-100 position-relative">
+            <img
+              class="w-100 h-100 rounded-4"
+              src="./imges/products/pasta.jpeg"
+            />
+            <div
+              class="products__item__rate--name d-flex align-items-center justify-content-between px-2"
+            >
+              <a
+                class="products__item__rate--name--btn rounded-3 text-center position-absolute"
+                href="#products"
+                id="btn"
+                >pasta</a
+              >
+              <div
+                class="products__item__rate--name--rate position-absolute"
+                id="rate"
+              >
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 food-box overflow-hidden d-flex align-items-center justify-content-center"
+        >
+          <div class="products__item rounded-4 w-100 position-relative">
+            <img
+              class="w-100 h-100 rounded-4"
+              src="./imges/products/meat.jpeg"
+            />
+            <div
+              class="products__item__rate--name d-flex align-items-center justify-content-between px-2"
+            >
+              <a
+                class="products__item__rate--name--btn rounded-3 text-center position-absolute"
+                href="#products"
+                id="btn"
+                >beef</a
+              >
+              <div
+                class="products__item__rate--name--rate position-absolute"
+                id="rate"
+              >
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 food-box overflow-hidden d-flex align-items-center justify-content-center"
+        >
+          <div class="products__item rounded-4 w-100 position-relative">
+            <img
+              class="w-100 h-100 rounded-4"
+              src="./imges/products/hamburger.jpeg"
+            />
+            <div
+              class="products__item__rate--name d-flex align-items-center justify-content-between px-2"
+            >
+              <a
+                class="products__item__rate--name--btn rounded-3 text-center position-absolute"
+                href="#products"
+                id="btn"
+                >hamburger</a
+              >
+              <div
+                class="products__item__rate--name--rate position-absolute"
+                id="rate"
+              >
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 food-box overflow-hidden d-flex justify-content-center align-items-center"
+        >
+          <div class="products__item rounded-4 w-100 position-relative">
+            <img
+              class="w-100 h-100 rounded-4"
+              src="./imges/products/salad.jpeg"
+            />
+            <div
+              class="products__item__rate--name d-flex align-items-center justify-content-between px-2"
+            >
+              <a
+                class="products__item__rate--name--btn rounded-3 text-center position-absolute"
+                href="#products"
+                id="btn"
+                >salad</a
+              >
+              <div
+                class="products__item__rate--name--rate position-absolute"
+                id="rate"
+              >
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 food-box overflow-hidden d-flex justify-content-center align-items-center"
+        >
+          <div class="products__item rounded-4 w-100 position-relative">
+            <img
+              class="w-100 h-100 rounded-4"
+              src="./imges/products/fruits.jpeg"
+            />
+            <div
+              class="products__item__rate--name d-flex align-items-center justify-content-between px-2"
+            >
+              <a
+                class="products__item__rate--name--btn rounded-3 text-center position-absolute"
+                href="#products"
+                id="btn"
+                >mango</a
+              >
+              <div
+                class="products__item__rate--name--rate position-absolute"
+                id="rate"
+              >
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 food-box overflow-hidden d-flex justify-content-center align-items-center"
+        >
+          <div class="products__item rounded-4 w-100 position-relative">
+            <img
+              class="w-100 h-100 rounded-4"
+              src="./imges/products/seafood.jpeg"
+            />
+            <div
+              class="products__item__rate--name d-flex align-items-center justify-content-between px-2"
+            >
+              <a
+                class="products__item__rate--name--btn rounded-3 text-center position-absolute"
+                href="#products"
+                id="btn"
+                >seafood</a
+              >
+              <div
+                class="products__item__rate--name--rate position-absolute"
+                id="rate"
+              >
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 food-box overflow-hidden d-flex justify-content-center align-items-center"
+        >
+          <div class="products__item rounded-4 w-100 position-relative">
+            <img
+              class="w-100 h-100 rounded-4"
+              src="./imges/products/chocolate.jpeg"
+            />
+            <div
+              class="products__item__rate--name d-flex align-items-center justify-content-between px-2"
+            >
+              <a
+                class="products__item__rate--name--btn rounded-3 text-center position-absolute"
+                href="#products"
+                id="btn"
+                >chocolate</a
+              >
+              <div
+                class="products__item__rate--name--rate position-absolute"
+                id="rate"
+              >
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 food-box overflow-hidden d-flex justify-content-center align-items-center"
+        >
+          <div class="products__item rounded-4 w-100 position-relative">
+            <img
+              class="w-100 h-100 rounded-4"
+              src="./imges/products/dounats.jpeg"
+            />
+            <div
+              class="products__item__rate--name d-flex align-items-center justify-content-between px-2"
+            >
+              <a
+                class="products__item__rate--name--btn rounded-3 text-center position-absolute"
+                href="#products"
+                id="btn"
+                >donuts</a
+              >
+              <div
+                class="products__item__rate--name--rate position-absolute"
+                id="rate"
+              >
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 food-box overflow-hidden d-flex justify-content-center align-items-center"
+        >
+          <div class="products__item rounded-4 w-100 position-relative">
+            <img
+              class="w-100 h-100 rounded-4"
+              src="./imges/products/ice-cream.jpg"
+            />
+            <div
+              class="products__item__rate--name d-flex align-items-center justify-content-between px-2"
+            >
+              <a
+                class="products__item__rate--name--btn rounded-3 text-center position-absolute"
+                href="#products"
+                id="btn"
+                >ice cream</a
+              >
+              <div
+                class="products__item__rate--name--rate position-absolute"
+                id="rate"
+              >
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 food-box overflow-hidden d-flex justify-content-center align-items-center"
+        >
+          <div class="products__item rounded-4 w-100 position-relative">
+            <img
+              class="w-100 h-100 rounded-4"
+              src="./imges/products/cake.jpeg"
+            />
+            <div
+              class="products__item__rate--name d-flex align-items-center justify-content-between px-2"
+            >
+              <a
+                class="products__item__rate--name--btn rounded-3 text-center position-absolute"
+                href="#products"
+                id="btn"
+                >cake</a
+              >
+              <div
+                class="products__item__rate--name--rate position-absolute"
+                id="rate"
+              >
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 food-box overflow-hidden d-flex justify-content-center align-items-center"
+        >
+          <div class="products__item rounded-4 w-100 position-relative">
+            <img
+              class="w-100 h-100 rounded-4"
+              src="./imges/products/corn.jpeg"
+            />
+            <div
+              class="products__item__rate--name d-flex align-items-center justify-content-between px-2"
+            >
+              <a
+                class="products__item__rate--name--btn rounded-3 text-center position-absolute"
+                href="#products"
+                id="btn"
+                >corn</a
+              >
+              <div
+                class="products__item__rate--name--rate position-absolute"
+                id="rate"
+              >
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+                <i class="text-warning fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="row services fullWidth my-2 py-3 overflow-hidden"
+        id="services"
+      >
+        <h1 class="m-auto title text-center text-warning services__title my-2">
+          our services
+        </h1>
+        <div class="col-lg-12 col-xl-6">
+          <div class="item services__img">
+            <img class="w-100" src="./imges/services/services.png" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-12 col-xl-6">
+          <div class="item d-flex flex-column">
+            <div class="services_list">
+              <p class="p-0 my-3 text-white">
+                <span class="fs-5 text-warning"
+                  >Explore a Variety of Dishes: </span
+                >Discover a wide range of delicious meals and recipes to suit
+                every taste and occasion.
+              </p>
+              <p class="p-0 my-3 text-white">
+                <span class="text-warning fs-5"
+                  >Detailed Recipe Information: </span
+                >Access step-by-step instructions, ingredients, and nutritional
+                details for every dish.
+              </p>
+              <p class="p-0 my-3 text-white">
+                <span class="text-warning fs-5"
+                  >Search and Filter Options: </span
+                >Easily find meals and recipes by cuisine, ingredients, or
+                dietary preferences.
+              </p>
+              <p class="p-0 my-3 text-white">
+                <span class="text-warning fs-5"
+                  >Personalized Recommendations:
+                </span>
+                Get meal suggestions based on your preferences and past
+                selections.
+              </p>
+              <p class="p-0 my-3 text-white">
+                <span class="text-warning fs-5">Passion for Quality:: </span>
+                We are dedicated to providing only the freshest and highest
+                quality ingredients for every recipe.
+              </p>
+              <p class="p-0 my-3 text-white">
+                <span class="text-warning fs-5"
+                  >Commitment to Customer Satisfaction:
+                </span>
+                Our goal is to create an exceptional user experience, ensuring
+                that every customer is happy with their food discovery journey.
+              </p>
+              <p class="p-0 my-3 text-white">
+                <span class="text-warning fs-5"
+                  >Customer-Centric Approach:
+                </span>
+                We prioritize our customers by ensuring a seamless and enjoyable
+                experience, from browsing recipes to preparing meals, with
+                constant support along the way.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row gy-3 about my-4 mx-auto" id="about">
+        <h1 class="about__title text-center mt-3 text-capitalize">
+          <span class="text-success">about</span> Us
+        </h1>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 about__box">
+          <div class="item about__item bg-success rounded-4 p-3">
+            <h6 class="m-0 p-0 text-warning">
+              1- Passion for Culinary Experience
+            </h6>
+            <p class="py-3 text-white m-0">
+              At Food, we are passionate about providing the best culinary
+              experiences for all food enthusiast
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 about__box">
+          <div class="item about__item bg-success rounded-4 p-3">
+            <h6 class="m-0 p-0 text-warning">2- Rich and Updated Content</h6>
+            <p class="py-3 text-white m-0">
+              We offer a diverse range of dishes and recipes that are constantly
+              updated to suit all tastes.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 about__box">
+          <div class="item about__item bg-success rounded-4 p-3">
+            <h6 class="m-0 p-0 text-warning">3- Explore Dishes and Recipe</h6>
+            <p class="py-3 text-white m-0">
+              Our platform allows you to explore a wide variety of dishes and
+              recipes from different cuisines
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 about__box">
+          <div class="item about__item bg-success rounded-4 p-3">
+            <h6 class="m-0 p-0 text-warning">4- Quick and Easy Search</h6>
+            <p class="py-3 text-white m-0">
+              Easily find specific dishes by searching with various filters such
+              as ingredients, cuisine type
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 about__box">
+          <div class="item about__item bg-success rounded-4 p-3">
+            <h6 class="m-0 p-0 text-warning">
+              5- Detailed Recipe Instructions
+            </h6>
+            <p class="py-3 text-white m-0">
+              We provide recipes with detailed instructions for a memorable
+              cooking experience.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 about__box">
+          <div class="item about__item bg-success rounded-4 p-3">
+            <h6 class="m-0 p-0 text-warning">6- Easy Access</h6>
+            <p class="py-3 text-white m-0">
+              We aim to bring delicious meals and drinks to your home with ease
+              and convenience ensuring
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 about__box">
+          <div class="item about__item bg-success rounded-4 p-3">
+            <h6 class="m-0 p-0 text-warning">
+              7- Comfortable Cooking Experience
+            </h6>
+            <p class="py-3 text-white m-0">
+              We strive to make cooking enjoyable, easy, and accessible for both
+              beginners and experts.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 about__box">
+          <div class="item about__item bg-success rounded-4 p-3">
+            <h6 class="m-0 p-0 text-warning">8- Continuous Support</h6>
+            <p class="py-3 text-white m-0">
+              We offer continuous support to assist users with inquiries and
+              help them choose recipes
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="row pricing fullWidth justify-content-center overflow-hidden"
+        id="pricing"
+      >
+        <div class="pricing__title col-xl-12 h-25 text-center">
+          <h1 class="text-white">
+            A new recipe every day to inspire you!
+            <span class="text-warning">Subscribe now</span>
+          </h1>
+          <p class="p-0 mt-2 text-white-50 fs-4">
+            discover creative ways to prepare the most delicious dishes with
+            ease
+          </p>
+        </div>
+
+        <div class="row justify-content-center prising__subscripe gy-3">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 pricing__box">
+            <div class="item">
+              <div
+                class="card pricing__box--card m-auto rounded-4 justify-content-between py-3"
+              >
+                <div class="card-title px-3 mt-3 m-0">
+                  <h5 class="text-success fw-bold">Free Plan</h5>
+                  <p class="card-text text-body-secondary fs-1 text-capitalize">
+                    free <span class="fs-6">/Month</span>
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush pricing__box--list">
+                  <li class="list-group-item">
+                    Access to a limited number of recipes (10 recipes per
+                    month).
+                  </li>
+                  <li class="list-group-item">
+                    View basic ingredients of the recipes.
+                  </li>
+                  <li class="list-group-item">Ads displayed during usage.</li>
+                </ul>
+
+                <a
+                  href="#"
+                  class="card-link w-75 pricing__box--link mt-3 mb-2 mx-auto text-center p-2 rounded-4"
+                >
+                  Subscribe Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 pricing__box">
+            <div class="item">
+              <div
+                class="card pricing__box--card m-auto rounded-4 justify-content-between py-3"
+              >
+                <div class="card-title p-3 m-0">
+                  <h5 class="text-success fw-bold">Basic Plan</h5>
+                  <p class="card-text text-body-secondary fs-1 text-capitalize">
+                    50 EGP <span class="fs-6">/Month</span>
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush pricing__box--list">
+                  <li class="list-group-item">Access to all recipes.</li>
+                  <li class="list-group-item">
+                    View detailed preparation steps.
+                  </li>
+                  <li class="list-group-item">
+                    Filter recipes by categories (e.g., vegetarian, meat,
+                    desserts).
+                  </li>
+                  <li class="list-group-item">Ad-free experience.</li>
+                </ul>
+                <a
+                  href="#"
+                  class="card-link w-75 pricing__box--link mt-3 mb-2 mx-auto text-center p-2 rounded-4"
+                >
+                  Subscribe Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 pricing__box">
+            <div class="item">
+              <div
+                class="card pricing__box--card rounded-4 m-auto justify-content-between py-3 bg-warning-subtle"
+              >
+                <div class="card-title p-3 m-0">
+                  <h5 class="text-warning fw-bold">Premium Plan</h5>
+                  <p class="card-text text-body-secondary fs-1 text-capitalize">
+                    120 EGP <span class="fs-6">/Month</span>
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush pricing__box--list">
+                  <li class="list-group-item bg-warning-subtle">
+                    All features of the Basic Plan.
+                  </li>
+                  <li class="list-group-item bg-warning-subtle">
+                    Ability to download recipes for offline use.
+                  </li>
+                  <li class="list-group-item bg-warning-subtle">
+                    Video tutorials for each recipe.
+                  </li>
+                  <li class="list-group-item bg-warning-subtle">
+                    Priority customer support.
+                  </li>
+                  <li class="list-group-item bg-warning-subtle">
+                    Option to add and save your own recipes.
+                  </li>
+                </ul>
+                <a
+                  href="#"
+                  class="card-link w-75 pricing__box--link mt-3 mb-2 mx-auto text-center p-2 rounded-4"
+                >
+                  Subscribe Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row contact my-4 mx-auto overflow-hidden" id="contact">
+        <div class="col-sm-12 col-md-4 col-lg-4 contact__info p-0">
+          <div
+            class="contact__info__item bg-success d-flex flex-column justify-content-between p-4 rounded-4 w-100"
+          >
+            <div class="contact__info__item--title text-white">
+              <h5 class="mb-3">Contact information</h5>
+              <p class="text-capitalize text-white-50">
+                fill up the form and our team will get back to you within 24
+                hour
+              </p>
+            </div>
+            <div class="contact__info__item--connect d-flex flex-column gap-4">
+              <div class="contact__info__item--connect--tel">
+                <i class="fa-solid fa-phone me-2"></i>
+                <p class="d-inline text-white fw-medium">0123 4567 8910</p>
+              </div>
+              <div class="contact__info__item--connect--email">
+                <i class="fa-solid fa-envelope me-2"></i>
+                <p class="d-inline text-white fw-medium">food@gmail.com</p>
+              </div>
+              <div class="contact__info__item--connect--location">
+                <i class="fa-solid fa-location-dot me-2"></i>
+                <p class="d-inline text-white fw-medium">102 street 2714 Dan</p>
+              </div>
+            </div>
+            <div class="contact__info__item--links d-flex gap-4">
+              <div class="contact__info__item--links--facebook pt-1">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </div>
+              <div class="contact__info__item--links--x pt-1">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+              <div class="contact__info__item--links--insta pt-1">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <div class="contact__info__item--links--linkedin pt-1">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-8 contact__form">
+          <div
+            class="contact__form__message--done message-done rounded-3 p-3 text-white"
+          >
+            <p class="m-0">Your message has been sent</p>
+          </div>
+          <div class="d-flex flex-column contact__form__item gap-3 p-0 py-3">
+            <div class="contact__form__item--name d-flex gap-2 p-0">
+              <input placeholder="Frist name" class="p-2 felds" type="text" />
+              <input placeholder="last name" class="p-2 felds" type="text" />
+            </div>
+            <div class="contact__form__item--name d-flex gap-2 p-0">
+              <input placeholder="Email" class="p-2 felds" type="text" />
+              <input
+                placeholder="phone"
+                class="p-2 felds"
+                type="text"
+                maxlength="11"
+              />
+            </div>
+            <textarea
+              placeholder="Enter your Message"
+              class="p-2 felds"
+            ></textarea>
+            <button class="rounded-4">send</button>
+          </div>
+        </div>
+      </section>
+      <footer class="row footer fullWidth">
+        <a href="#main" class="text-warning fs-1 my-3">Fresh Food</a>
+        <div class="footer__info">
+          <div class="footer__info--quickLinks">
+            <h4 class="text-capitalize text-white">quickLinks</h4>
+            <ul>
+              <li><a href="#hero">main Page</a></li>
+              <li><a href="#products">products</a></li>
+              <li><a href="#services">services</a></li>
+              <li><a href="#about">about us</a></li>
+              <li><a href="#contact">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer__info--contactInfo">
+            <h4 class="text-capitalize text-white">contact us</h4>
+            <ul>
+              <li><a href="tel:000000000">call us</a></li>
+              <li><a href="mailto:mostafayahya000@gmail.com">sent mail</a></li>
+              <li><a href="#contact">location</a></li>
+              <li><a href="#">polices</a></li>
+              <li><a href="#">privacy</a></li>
+            </ul>
+          </div>
+          <div class="footer__subscripe">
+            <h4 class="text-capitalize text-white">Subscripe</h4>
+            <div class="footer__subscripe--email">
+              <p>
+                Send us your email so we can share the latest delicious recipes
+                and a variety of dishes with you!
+              </p>
+              <input type="text" />
+              <button>send</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./javescript/script.js"></script>
+  </body>
+</html>
